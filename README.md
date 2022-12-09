@@ -24,9 +24,6 @@ cli := mwaah.NewClient(*svc, &mwaaName, false)
 
 # Examples
 ## Triggering a New DAG Run
-<table>
-<tr>
-<td>
 
 ```go
 dagRun := airflow.NewDAGRun()
@@ -49,9 +46,6 @@ if err != nil {
     fmt.Printf("newDagRun:\n %v\n", newDagRun)
 }
 ```
-</td>
-<td>
-
 ```shell
 newDagRun:
 {
@@ -64,22 +58,8 @@ newDagRun:
   "execution_date": "2022-11-17T16:08:12Z",
   "external_trigger": true
 }
-
-
-
-
-
-
-
-
-
 ```
-
-</td>
-</tr>
-<tr>
-<td>
-
+## Getting DAGRun State
 ```go
 	dagState, err := cli.GetDagState(newDagRun.GetDagId(), newDagRun.GetExecutionDate())
     if err != nil {
@@ -87,19 +67,10 @@ newDagRun:
     }
 	fmt.Printf("dagState: %+s", &dagState)
 ```
-</td>
-<td>
 
 ```shell
-running
+dagState: running
 ```
-
-</td>
-</tr>
-</table>
-
-
-
 
 # Currently Supported Apache Airflow CLI commands
 | Version | Command                  |
