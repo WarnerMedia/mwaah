@@ -42,7 +42,6 @@ if err != nil {
     if err != nil {
         panic(err)
     }
-    fmt.Println(dst.String())
     fmt.Printf("newDagRun:\n %v\n", newDagRun)
 }
 ```
