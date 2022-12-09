@@ -1,5 +1,6 @@
 #  AWS MWAA (Managed Workflows for Apache Airflow) Helper - Go
 Go Client for running Apache Airflow CLI commands on AWS MWAA (Managed Workflows for Apache Airflow) instances.  
+Built to give a client like experience for MWAA, utilizing the Apache Go Client objects.
 https://docs.aws.amazon.com/mwaa/latest/userguide/airflow-cli-command-reference.html
 
 # Running CLI on a private VPC instance
