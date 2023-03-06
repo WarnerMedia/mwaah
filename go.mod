@@ -2,7 +2,7 @@ module mwaah
 
 go 1.19
 
-require github.com/aws/aws-sdk-go v1.44.157
+require github.com/aws/aws-sdk-go v1.44.214
 
 require github.com/davecgh/go-spew v1.1.1 // indirect
 
